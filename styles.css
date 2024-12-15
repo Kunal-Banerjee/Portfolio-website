@@ -33,12 +33,12 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a.active {
-    color: #f0a500;
-}
-
 nav ul li a:hover {
     color: #f0a500;
+}
+.nav ul li a:hover, .nav-link.active {
+    
+    color: rgb(253, 192, 23);
 }
 
 section {
