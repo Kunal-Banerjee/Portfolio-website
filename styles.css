@@ -8,7 +8,7 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 23px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -33,20 +33,19 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a.active {
-    color: #f0a500;
-}
-
 nav ul li a:hover {
     color: #f0a500;
 }
+.nav ul li a:hover, .nav-link.active {
+    
+    color: rgb(253, 192, 23);
+}
+
 
 section {
     padding: 60px 20px;
     margin-top: 60px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 #home {
@@ -119,11 +118,6 @@ li {
     animation: fadeIn 2s ease;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
 
     .animated-text {
         font-size: 2em;
