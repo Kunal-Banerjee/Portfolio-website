@@ -8,7 +8,7 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,7 +28,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f0f4f5fb;
+    color: #fff;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -36,32 +36,23 @@ nav ul li a {
 nav ul li a:hover {
     color: #f0a500;
 }
-.nav ul li a:hover, .nav-link.active {
-    
-    color: rgb(253, 192, 23);
-}
 
 section {
-    padding: 60px 20px;
+    padding: 0px 20px;
     margin-top: 60px;
-    max-width: 800px;
-    }
+}
 
 #home {
     background: #f4f4f4;
     text-align: center;
-    padding-top: 100px;
 }
 
-#about, #contact {
+#about, #Education, #contact {
     background: #88ee35;
 }
 
-#projects {
+#projects, #Skills {
     background: #f3f033;
-}
-#skills {
-    background: #f3f032;
 }
 
 h1, h2, h3 {
@@ -82,47 +73,9 @@ p {
 ul {
     list-style: none;
     padding: 0;
-    text-align: center;
 }
 
 li {
     margin: 5px 0;
 }
 
-@keyframes slide {
-    0% { opacity: 0; transform: translateY(-20px); }
-    100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-.animated-text {
-    font-size: 3em;
-    font-weight: bold;
-    color: greenyellow;
-    text-shadow: 2px 2px 0 #333;
-    animation: slide 4s ease;
-}
-
-.project {
-    background: #fff;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    animation: fadeIn 2s ease;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .animated-text {
-        font-size: 2em;
-    }
-}
